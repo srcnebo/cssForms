@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Exo:300,400|Montserrat:400,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="form__header container">
+        <h1>Let's talk</h1>
+        <p>Think you have what it takes? Show us.</p>
+    </div>
+    <form class="container">
+        <h2>1. Personal information</h2>
+        <div class="personal">
+            <input type="text" name="fullname" id="fnameid" placeholder="Full name" required>
+            <input type="number" name="phonenum" id="phoneid" placeholder="Phone" required>
+
+            <input type="email" name="myemail" id="emailid" placeholder="Email" required>
+            <input type="email" name="myemail" id="emailid" placeholder="Re-enter email" required>
+
+            <input type="text" name="address" id="myaddress" placeholder="Address" required>
+            <input type="text" name="address" id="myaddress">
+
+            <input type="text" name="city" id="mycity" placeholder="City" required>
+            <input type="text" name="state" id="mystate" placeholder="State">
+            <input type="text" name="country" id="mycountry" placeholder="Country/Region" required>
+            <input type="text" name="zip" id="myzip" placeholder="Zip/Postal code">
+
+            <input type="text" name="referal" id="referal" placeholder="How did you hear about us">
+        </div>
+
+        <h2>2. Skills and location</h2>
+        <div class="skills">
+            <div class="radio__section radio">
+                <p>Which is your primary design discipline?</p>
+
+                <input type="radio" class="style-radio" name="discipline" id="research">
+                <label for="research" class="skills_discipline">Design Research</label>
+
+                <input type="radio" class="style-radio" name="discipline" id="visual">
+                <label for="visual" class="skills_discipline">Visual Design</label>
+
+                <input type="radio" class="style-radio" name="discipline" id="uxdesign">
+                <label for="uxdesign" class="skills_discipline">UX Design</label>
+
+                <input type="radio" class="style-radio" name="discipline" id="fed">
+                <label for="fed" class="skills_discipline">Front-end Dev</label>
+            </div>
+            <div class="checkdesign checkbox">
+                <p>Do you have experience with any other disciplines?</p>
+                <input type="checkbox" name="vdesign" id="vdes" class="style-checkbox">
+                <label for="vdes">Visual Design</label>
+
+                <input type="checkbox" name="vdesign" id="udes" class="style-checkbox">
+                <label for="udes">UX Design</label>
+
+                <input type="checkbox" name="vdesign" id="fdev" class="style-checkbox">
+                <label for="fdev">Front-end Development</label>
+            </div>
+            <div class="checklocal checkbox">
+                <p>Where are you interested in working?</p>
+                <p>You must be legally authorized to work without visa sponsorship in the location(s) you choose.</p>
+
+                <input type="checkbox" name="location" id="tx" class="style-checkbox">
+                <label for="tx">Austin, Texas</label>
+
+                <input type="checkbox" name="location" id="ny" class="style-checkbox">
+                <label for="ny">New York, New York</label>
+
+                <input type="checkbox" name="location" id="ca" class="style-checkbox">
+                <label for="ca">Toronto, Canada</label>
+
+                <input type="checkbox" name="location" id="ch" class="style-checkbox">
+                <label for="ch">Shanghai, Chaina</label>
+
+                <input type="checkbox" name="location" id="ir" class="style-checkbox">
+                <label for="ir">Dublin, Ireland</label>
+
+                <input type="checkbox" name="location" id="uk" class="style-checkbox">
+                <label for="uk">Hursley, United Kingdon</label>
+
+                <input type="checkbox" name="location" id="de" class="style-checkbox">
+                <label for="de">Boeblingen, Germany</label>
+
+                <input type="checkbox" name="location" id="else" class="style-checkbox">
+                <label for="else">Somewhere else</label>
+            </div>
+        </div>
+        <h2>3. Portfolio</h2>
+        <div class="portfolio__section">
+            <p>Prove you're IBM's next great designer by showing us who you are. What you've done. How you think. Tell us
+                your story.
+            </p>
+            <input type="text" name="portfolio" id="portfol" placeholder="Portfolio link" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Anything else(another link, availability, etc.)?"></textarea>
+
+            <input type="submit" class="button">
+        </div>
+    </form>
+
+
+
+</body>
+
+</html>
