@@ -19,19 +19,20 @@
     <form class="container">
         <h2>1. Personal information</h2>
         <div class="personal">
-            <input type="text" name="fullname" id="fnameid" placeholder="Full name" required>
-            <input type="number" name="phonenum" id="phoneid" placeholder="Phone" required>
+            <input type="text" name="fullname" id="fnameid" placeholder="Full name" pattern="/^[a-z ,.'-]+$/i" required>
+            <input type="number" name="phonenum" id="phoneid" placeholder="Phone" pattern="[0-9]{8,15}" required>
 
-            <input type="email" name="myemail" id="emailid" placeholder="Email" required>
-            <input type="email" name="myemail" id="emailid" placeholder="Re-enter email" required>
+            <input type="email" name="myemail" id="emailid" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
+            <input type="email" name="myemail" id="emailid" placeholder="Re-enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                required>
 
-            <input type="text" name="address" id="myaddress" placeholder="Address" required>
+            <input type="text" name="address" id="myaddress" placeholder="Address" pattern="/^[0-9a-z ,.'-]+$/i" required>
             <input type="text" name="address" id="myaddress">
 
-            <input type="text" name="city" id="mycity" placeholder="City" required>
+            <input type="text" name="city" id="mycity" placeholder="City" pattern="/^[a-z ,.'-]+$/i" required>
             <input type="text" name="state" id="mystate" placeholder="State">
-            <input type="text" name="country" id="mycountry" placeholder="Country/Region" required>
-            <input type="text" name="zip" id="myzip" placeholder="Zip/Postal code">
+            <input type="text" name="country" id="mycountry" placeholder="Country/Region" pattern="/^[a-z ,.'-]+$/i" required>
+            <input type="text" name="zip" id="myzip" placeholder="Zip/Postal code" pattern="[0-9]{5}]">
 
             <input type="text" name="referal" id="referal" placeholder="How did you hear about us">
         </div>
